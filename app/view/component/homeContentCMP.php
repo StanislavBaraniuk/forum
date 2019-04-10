@@ -77,18 +77,13 @@
 
 <style>
 
-    #image-icon {
-        /*display: none;*/
-        /*visibility: hidden;*/
-    }
-
     .new-discuss-block {
         display: flex;
         width: 100%;
         background-color: #b5b5b5;
         height: 100px;
         position: absolute;
-        bottom: 0;
+        margin-top: -100px;
     }
 
     .new-discuss-block .create-button {
