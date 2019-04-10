@@ -1,0 +1,39 @@
+%no-select
+  user-select: none
+  -webkit-user-select: none
+  -ms-user-select: none
+  -webkit-touch-callout: none
+  -o-user-select: none
+  -moz-user-select: none
+
+%disable
+  font-size: 0 !important
+  height: 0 !important
+  visibility: hidden !important
+  width: 0 !important
+  margin: 0 !important
+  padding: 0 !important
+  position: absolute !important
+  top: -100px !important
+
+.inactive
+  background-color: #b5b5b5 !important
+
+.color-red
+  color: red !important
+
+.border-red
+  border: 1px solid red !important
+  color: red !important
+
+=noselect()
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.noselect
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none

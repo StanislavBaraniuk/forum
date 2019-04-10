@@ -1,0 +1,797 @@
+header, .discussContent .body .like, .indexContent .discussion-present-block .body .like {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+}
+
+.discussContent .disable, .indexContent .disable {
+  font-size: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: -100px !important;
+}
+
+.inactive {
+  background-color: #b5b5b5 !important;
+}
+
+.color-red {
+  color: red !important;
+}
+
+.border-red {
+  border: 1px solid red !important;
+  color: red !important;
+}
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.indexContent {
+  height: 100vh;
+  margin-left: 400px;
+  background-color: whitesmoke;
+  overflow-y: scroll;
+}
+@media all and (max-width: 1500px) {
+  .indexContent {
+    margin-left: 300px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .indexContent {
+    margin-left: 300px;
+  }
+}
+@media all and (max-width: 768px) {
+  .indexContent {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.indexContent .open-menu:hover {
+  transition: 0.3s;
+  background-color: #0065a1;
+}
+.indexContent .open-menu {
+  top: 0;
+  margin-left: 10px;
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  background-color: #00a0ff;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.indexContent .discussion-present-block {
+  width: 100%;
+  height: 200px;
+  padding: 20px 20px 0 20px;
+}
+@media all and (max-width: 1200px) {
+  .indexContent .discussion-present-block {
+    height: 300px !important;
+  }
+}
+@media all and (max-width: 576px) {
+  .indexContent .discussion-present-block {
+    height: 430px !important;
+  }
+}
+.indexContent .discussion-present-block .body:hover {
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
+}
+.indexContent .discussion-present-block .body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+}
+.indexContent .discussion-present-block .body .photo-block {
+  padding-top: 10px;
+}
+.indexContent .discussion-present-block .body .photo {
+  width: 100px;
+  height: 100px;
+  background-color: #b5b5b5;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  font-size: 50px;
+  line-height: 90px;
+  padding-left: 23px;
+  color: white;
+  margin-left: calc(50% - 50px );
+}
+@media all and (max-width: 1200px) {
+  .indexContent .discussion-present-block .body .photo {
+    margin-left: 5px;
+  }
+}
+.indexContent .discussion-present-block .body .photo {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  margin-top: 40px;
+  background-image: url("https://ichef.bbci.co.uk/news/660/cpsprodpb/1481/production/_105894250_mediaitem105894249.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px inset rgba(0, 0, 0, 0.5);
+}
+.indexContent .discussion-present-block .body .description {
+  padding: 10px;
+  margin-top: 40px;
+}
+.indexContent .discussion-present-block .body .description .tags-block {
+  width: 90%;
+  height: 40px;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.indexContent .discussion-present-block .body .description .title {
+  overflow-x: scroll;
+  font-size: 15px;
+}
+.indexContent .discussion-present-block .body .description .author {
+  overflow-x: scroll;
+  font-size: 25px;
+}
+.indexContent .discussion-present-block .body .description .data span {
+  margin-left: 10px;
+}
+.indexContent .discussion-present-block .body .info {
+  margin-top: 50px;
+}
+@media all and (max-width: 1200px) {
+  .indexContent .discussion-present-block .body .info {
+    margin-top: 0;
+  }
+}
+.indexContent .discussion-present-block .body .info .counts span {
+  margin-left: 10px;
+  font-size: 17px;
+}
+.indexContent .discussion-present-block .body .like {
+  padding: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+@media all and (max-width: 1200px) {
+  .indexContent .discussion-present-block .body .like {
+    padding-top: 0;
+    text-align: right;
+  }
+}
+.indexContent .discussion-present-block .body .like .use {
+  color: red;
+}
+.indexContent .discussion-present-block .body .like .block {
+  font-size: 20px;
+}
+.indexContent .discussion-present-block .body .like .block i {
+  transition: 0.5s;
+  font-size: 40px;
+  cursor: pointer;
+}
+.indexContent .like-disable {
+  font-size: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: -5px;
+}
+.message-block {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+  text-align: center;
+  background-color: #b5b5b5;
+}
+.message-block textarea {
+  border-radius: 10px;
+  height: 80px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  background-color: #dddddd;
+  resize: none;
+  padding: 10px;
+  padding-right: 50px;
+  font-size: 15px;
+  width: 90%;
+}
+.message-block .icon {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 25px;
+  margin-left: -40px;
+  margin-top: 20px;
+  position: absolute;
+}
+.message-block .icon:hover {
+  color: white;
+}
+
+.discussContent {
+  height: 100vh;
+  margin-left: 400px;
+  background-color: whitesmoke;
+  overflow-y: scroll;
+  padding: 20px;
+}
+@media all and (max-width: 1500px) {
+  .discussContent {
+    margin-left: 300px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .discussContent {
+    margin-left: 300px;
+  }
+}
+@media all and (max-width: 768px) {
+  .discussContent {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.discussContent .body {
+  margin-left: 3px;
+  background-color: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+}
+.discussContent .body .header {
+  height: 150px;
+  margin-bottom: 0;
+}
+@media all and (max-width: 1200px) {
+  .discussContent .body .header {
+    height: 410px;
+  }
+}
+.discussContent .body .photo-block {
+  padding-top: 20px;
+}
+.discussContent .body .photo {
+  width: 100px;
+  height: 100px;
+  background-color: #b5b5b5;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  font-size: 50px;
+  line-height: 90px;
+  padding-left: 23px;
+  color: white;
+  margin-left: calc(50% - 50px );
+}
+@media all and (max-width: 1200px) {
+  .discussContent .body .photo {
+    margin-left: 5px;
+  }
+}
+.discussContent .body .description {
+  padding: 10px;
+  margin-top: 20px;
+}
+.discussContent .body .description .tags-block {
+  width: 90%;
+  height: 40px;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.discussContent .body .description .title {
+  overflow-x: scroll;
+  font-size: 15px;
+}
+.discussContent .body .description .author {
+  overflow-x: scroll;
+  font-size: 25px;
+}
+.discussContent .body .description .data span {
+  margin-left: 10px;
+}
+.discussContent .body .info {
+  margin-top: 30px;
+}
+@media all and (max-width: 1200px) {
+  .discussContent .body .info {
+    margin-top: 0;
+  }
+}
+.discussContent .body .info .counts span {
+  margin-left: 10px;
+  font-size: 17px;
+}
+.discussContent .body .like {
+  padding: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+@media all and (max-width: 1200px) {
+  .discussContent .body .like {
+    padding-top: 0;
+    text-align: right;
+  }
+}
+.discussContent .body .like .use {
+  color: red;
+}
+.discussContent .body .like .block {
+  font-size: 20px;
+}
+.discussContent .body .like .block i {
+  transition: 0.5s;
+  font-size: 40px;
+  cursor: pointer;
+}
+.discussContent .body .like-disable {
+  font-size: 0 !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: -5px;
+}
+.discussContent .messages {
+  margin-left: 30px;
+  height: 100%;
+  width: 100%;
+}
+@media all and (max-width: 575px) {
+  .discussContent .messages {
+    margin-top: 50px;
+  }
+}
+.discussContent .messages .message:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+.discussContent .messages .message {
+  padding: 10px;
+  width: 100%;
+}
+.discussContent .messages .message .text-block {
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: 10px;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.discussContent .messages .message .text-block a {
+  color: #00a0ff;
+  cursor: pointer;
+}
+.discussContent .messages .message .text-block a:hover {
+  text-decoration: underline;
+}
+.discussContent .messages .message .text-block .reply-in-message {
+  border: 1px dashed black;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.discussContent .messages .message .photo-block {
+  float: left;
+  height: 100%;
+  padding: 0;
+  padding-left: 20px;
+}
+.discussContent .messages .message .photo-block .photo-not-use {
+  margin-top: -40px;
+  margin-left: 15px;
+  font-size: 30px !important;
+}
+.discussContent .messages .message .photo-block .photo {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  padding: 0;
+}
+.discussContent .messages .message .author {
+  margin-top: 20px;
+  width: 70%;
+  height: 20px;
+}
+.discussContent .messages .message .text {
+  width: 100%;
+}
+@media all and (max-width: 575px) {
+  .discussContent .messages .message .actions {
+    margin-top: 20px;
+  }
+}
+.discussContent .messages .message .action:hover {
+  background-color: #b5b5b5;
+}
+.discussContent .messages .message .action {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #00a0ff;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+.discussContent .messages .message .info-block {
+  margin-left: 0;
+}
+.discussContent .messages .message .bottom-block {
+  margin-top: 10px;
+}
+.discussContent .messages .message .bottom-block .item {
+  padding: 10px;
+}
+.discussContent .messages .message .bottom-block .item span {
+  margin-left: 10px;
+}
+.discussContent #reply-block {
+  transition: 0.5s;
+  margin-left: -15px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.discussContent #reply-block button {
+  width: 100px;
+  background-color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+}
+.discussContent #reply-block .message-input textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.login-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-block form {
+  padding: 20px;
+  width: 320px;
+  background-color: white;
+}
+
+.profile-block {
+  margin: 20px;
+  width: calc(100% - 40px);
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.profile-block .info {
+  padding: 20px;
+}
+.profile-block .info .block {
+  overflow: scroll;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.profile-block .info .block .item a {
+  margin-left: 10px;
+}
+.profile-block .info .block .item input {
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+  float: right;
+}
+.profile-block .info .block button {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.profile-block .own {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.profile-block .own .block {
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.profile-block .own .block .discuss:hover {
+  opacity: 0.7;
+}
+.profile-block .own .block .discuss {
+  background-color: whitesmoke;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin: 5px;
+}
+.profile-block .own .block .discuss .item:last-child:hover {
+  opacity: 0.5;
+}
+.profile-block .own .block .discuss .item:last-child {
+  margin-top: -5px;
+  cursor: pointer;
+  text-align: right;
+  font-size: 25px;
+}
+.profile-block .own .block .discuss .item:last-child i:last-child {
+  margin-left: 10px;
+}
+
+header {
+  font-family: Poppins, sans-serif;
+  float: left;
+}
+@media all and (max-width: 768px) {
+  header {
+    float: none;
+  }
+}
+header .block {
+  width: 400px;
+  background-color: white;
+}
+header .block .logo {
+  margin-top: 10vh;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+header .block .logo a {
+  text-decoration: none;
+  color: black;
+}
+@media all and (max-width: 768px) {
+  header .block .logo {
+    margin-top: 10px;
+    width: 20%;
+    left: 10px;
+    float: left;
+  }
+}
+header .block .menu {
+  margin-top: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 100%;
+}
+@media all and (max-width: 768px) {
+  header .block .menu {
+    display: flex;
+    width: 100%;
+  }
+}
+@media all and (max-width: 400px) {
+  header .block .menu {
+    padding-top: 15px;
+    font-size: 12px;
+  }
+}
+header .block .menu div:hover {
+  color: #696969;
+}
+header .block .menu div {
+  padding: 5px;
+  cursor: pointer;
+  list-style-type: none;
+  text-align: center;
+}
+header .block .menu div span {
+  margin-right: 10px;
+}
+@media all and (max-width: 1500px) {
+  header .block {
+    width: 300px;
+  }
+}
+@media all and (max-width: 1024px) {
+  header .block {
+    width: 300px;
+  }
+}
+@media all and (max-width: 768px) {
+  header .block {
+    width: 100vw;
+    height: 90px;
+  }
+}
+header .block .filter {
+  background-color: white;
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  z-index: 999;
+}
+header .block .filter .search-button {
+  border: none;
+  background-color: #00a0ff;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+header .block .filter .mini-filters {
+  width: 100%;
+  text-align: center;
+}
+header .block .filter .mini-filters i {
+  padding: 10px;
+}
+header .block .filter .mini-filters span {
+  padding: 5px;
+  cursor: pointer;
+}
+header .block .filter .mini-filters span:hover {
+  background-color: dimgrey;
+  color: white;
+}
+header .block .filter .chips-block {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header .block .filter .chips-block div {
+  margin: 5px;
+  padding: 10px;
+  background-color: whitesmoke;
+  font-size: 15px;
+  border-radius: 10px;
+}
+header .block .filter .chips-block div i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+header .block .filter .chips-block div:hover {
+  border-radius: 2px;
+}
+header .block .filter input {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+}
+header .block .filter input:nth-child(1) {
+  width: 100%;
+}
+header .block .filter .input-block {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header .block .filter .input-block i {
+  margin-right: 10px;
+}
+header .block .filter input:focus {
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  margin-top: 10px;
+  height: 200px;
+  overflow-y: scroll;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Links inside the dropdown */
+/* Change color of dropdown links on hover */
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/*______SCROLL______________ */
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #2d6eb3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(193, 193, 194, 0.9);
+}
+
+/*background-color: whitesmoke; */
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

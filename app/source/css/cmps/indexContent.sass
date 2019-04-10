@@ -1,0 +1,171 @@
+.indexContent
+  height: 100vh
+  margin-left: $left-header-width
+  background-color: whitesmoke
+  overflow-y: scroll
+
+  @media all and (max-width: 1500px)
+    margin-left: $left-header-width - $sub-1500
+
+  @media all and (max-width: 1024px)
+    margin-left: $left-header-width - $sub-1024
+
+  @media all and (max-width: 768px)
+    margin-left: 0
+    width: 100%
+
+
+  .open-menu:hover
+    transition: 0.3s
+    background-color: #0065a1
+
+  .open-menu
+    top: 0
+    margin-left: 10px
+    position: absolute
+    cursor: pointer
+    padding: 10px
+    width: 100px
+    background-color: #00a0ff
+    color: white
+    border-radius: 10px
+    text-align: center
+
+  .discussion-present-block
+    width: 100%
+    height: 200px
+    padding: 20px 20px 0 20px
+
+    @media all and (max-width: 1200px)
+      height: 300px !important
+
+    @media all and (max-width: 576px)
+      height: 430px !important
+
+    .body:hover
+      -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75)
+      box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75)
+
+    .body
+      width: 100%
+      height: 100%
+      background-color: white
+      -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+      box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+
+      .photo-block
+        padding-top: 10px
+
+      .photo
+        width: 100px
+        height: 100px
+        background-color: #b5b5b5
+        border-radius: 100%
+        background-size: cover
+        background-position: center
+        font-size: 50px
+        line-height: 90px
+        padding-left: 23px
+        color: white
+        margin-left: calc(50% - 50px )
+
+        @media all and (max-width: 1200px)
+          margin-left: 5px
+
+      //.photo
+      //  width: 100px
+      //  height: 100px
+      //  background-color: #b5b5b5
+      //  border-radius: 100%
+      //  background-size: cover
+      //  background-position: center
+      //  font-size: 50px
+      //  line-height: 90px
+      //  padding-left: 23px
+      //  color: black
+
+      .photo
+        width: 100px
+        height: 100px
+        background-color: whitesmoke
+        border-radius: 100%
+        margin-top: 40px
+        background-image: url("https://ichef.bbci.co.uk/news/660/cpsprodpb/1481/production/_105894250_mediaitem105894249.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        border: 1px inset rgba(0, 0, 0, 0.5)
+
+      .description
+        padding: 10px
+        margin-top: 40px
+        //border-right: 1px solid #a6a6a6
+
+        .tags-block
+          width: 90%
+          height: 40px
+          overflow-x: scroll
+          display: flex
+          flex-wrap: nowrap
+
+
+
+        .title
+          overflow-x: scroll
+          font-size: 15px
+
+        .author
+          overflow-x: scroll
+          font-size: 25px
+
+        .data
+          span
+            margin-left: 10px
+
+      .info
+        margin-top: 50px
+        @media all and (max-width: 1200px)
+          margin-top: 0
+        .counts
+          span
+            margin-left: 10px
+            font-size: 17px
+
+      .like
+        @extend %no-select
+        padding: auto
+        width: 100%
+        text-align: center
+        padding-top: 50px
+
+        @media all and (max-width: 1200px)
+          padding-top: 0
+          text-align: right
+
+        .use
+          color: red
+
+        .block
+          font-size: 20px
+
+          i
+            transition: 0.5s
+            font-size: 40px
+            cursor: pointer
+
+
+
+  .like-disable
+    font-size: 0 !important
+    height: 0 !important
+    visibility: hidden !important
+    width: 0 !important
+    margin: 0 !important
+    padding: 0 !important
+    position: absolute
+    top: -5px
+
+  .disable
+    @extend %disable
+

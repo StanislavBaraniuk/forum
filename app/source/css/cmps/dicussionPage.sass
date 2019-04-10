@@ -1,0 +1,270 @@
+.message-block
+  position: absolute
+  z-index: 9999
+  bottom: 0
+  height: 100px
+  width: 100vw
+  text-align: center
+  background-color: #b5b5b5
+
+  textarea
+    border-radius: 10px
+    height: 80px
+    margin-top: 10px
+    outline: none
+    border: none
+    background-color: #dddddd
+    resize: none
+    padding: 10px
+    padding-right: 50px
+    font-size: 15px
+    width: 90%
+
+  .icon
+    cursor: pointer
+    transition: 0.3s
+    font-size: 25px
+    margin-left: -40px
+    margin-top: 20px
+    position: absolute
+
+  .icon:hover
+    color: white
+
+.discussContent
+  height: 100vh
+  margin-left: $left-header-width
+  background-color: whitesmoke
+  overflow-y: scroll
+  padding: 20px
+
+  @media all and (max-width: 1500px)
+    margin-left: $left-header-width - $sub-1500
+
+  @media all and (max-width: 1024px)
+    margin-left: $left-header-width - $sub-1024
+
+  @media all and (max-width: 768px)
+    margin-left: 0
+    width: 100%
+
+  .body
+    margin-left: 3px
+    background-color: white
+    width: 100%
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75)
+
+    .header
+      height: 150px
+      margin-bottom: 0
+
+      @media all and (max-width: 1200px)
+        height: 410px
+
+    .photo-block
+      padding-top: 20px
+
+    .photo
+      width: 100px
+      height: 100px
+      background-color: #b5b5b5
+      border-radius: 100%
+      background-size: cover
+      background-position: center
+      font-size: 50px
+      line-height: 90px
+      padding-left: 23px
+      color: white
+      margin-left: calc(50% - 50px )
+
+      @media all and (max-width: 1200px)
+        margin-left: 5px
+
+    .description
+      padding: 10px
+      margin-top: 20px
+      //border-right: 1px solid #a6a6a6
+
+      .tags-block
+        width: 90%
+        height: 40px
+        overflow-x: scroll
+        display: flex
+        flex-wrap: nowrap
+
+      .title
+        overflow-x: scroll
+        font-size: 15px
+
+      .author
+        overflow-x: scroll
+        font-size: 25px
+
+      .data
+        span
+          margin-left: 10px
+
+    .info
+      margin-top: 30px
+
+      @media all and (max-width: 1200px)
+        margin-top: 0
+
+      .counts
+        span
+          margin-left: 10px
+          font-size: 17px
+
+    .like
+      @extend %no-select
+      padding: auto
+      width: 100%
+      text-align: center
+      padding-top: 30px
+
+      @media all and (max-width: 1200px)
+        padding-top: 0
+        text-align: right
+
+      .use
+        color: red
+
+      .block
+        font-size: 20px
+
+        i
+          transition: 0.5s
+          font-size: 40px
+          cursor: pointer
+
+
+    .like-disable
+      font-size: 0 !important
+      height: 0 !important
+      visibility: hidden !important
+      width: 0 !important
+      margin: 0 !important
+      padding: 0 !important
+      position: absolute
+      top: -5px
+
+  .disable
+    @extend %disable
+
+
+  .messages
+    margin-left: 30px
+    height: 100%
+    width: 100%
+    @media all and (max-width: 575px)
+      margin-top: 50px
+
+    .message:nth-child(odd)
+      background-color: #dcdcdc
+
+    .message
+      padding: 10px
+      width: 100%
+
+      .text-block
+        max-height: 200px
+        overflow-y: scroll
+        padding: 10px
+        margin-left: 0
+        margin-top: 5px
+
+        a
+          color: #00a0ff
+          cursor: pointer
+
+          &:hover
+            text-decoration: underline
+
+        .reply-in-message
+          border: 1px dashed black
+          padding: 10px
+          font-size: 12px
+          margin-bottom: 10px
+
+      .photo-block
+        float: left
+        height: 100%
+        padding: 0
+        padding-left: 20px
+
+        .photo-not-use
+          margin-top: -40px
+          margin-left: 15px
+          font-size: 30px !important
+
+        .photo
+          width: 60px
+          height: 60px
+          font-size: 30px
+          line-height: 60px
+          padding: 0
+
+
+      .author
+        margin-top: 20px
+        width: 70%
+        height: 20px
+
+      .text
+        width: 100%
+
+      .actions
+        @media all and (max-width: 575px)
+          margin-top: 20px
+
+      .action:hover
+        background-color: #b5b5b5
+
+      .action
+        cursor: pointer
+        transition: 0.3s
+        background-color: #00a0ff
+        padding: 10px
+        border-radius: 5px
+        color: white
+        width: 100px
+        text-align: center
+
+
+      .info-block
+        margin-left: 0
+
+      .bottom-block
+        margin-top: 10px
+
+        .item
+          padding: 10px
+          span
+            margin-left: 10px
+
+  #reply-block
+    transition: 0.5s
+    margin-left: -15px
+    padding: 10px
+    margin-bottom: 10px
+    button
+      width: 100px
+      background-color: whitesmoke
+      padding-left: 10px
+      padding-right: 10px
+      float: right
+    .message-input
+      textarea
+        margin-top: 10px
+        margin-bottom: 10px
+        padding: 10px
+        resize: none
+        outline: none
+        width: 100%
+        height: 100px
+        border: none
+        background-color: whitesmoke
+
+
